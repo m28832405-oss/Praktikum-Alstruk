@@ -1,0 +1,259 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNJrHtFxBI2pHWI0eYBw3oi",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/m28832405-oss/Praktikum-Alstruk/blob/main/Praktikum%203-Operator%20Perbandingan%20dan%20Logika\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ByyOZhRgm-Uu",
+        "outputId": "a1f41fcb-5c67-4f30-e5e0-ef6caab90983"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--- Nilai dan Tipe Data Awal ---\n",
+            "Nilai nama: Fajar | Tipe data: <class 'str'>\n",
+            "Nilai umur: 19 | Tipe data: <class 'int'>\n",
+            "Nilai berat: 54.5 | Tipe data: <class 'float'>\n",
+            "Nilai terdaftar: True | Tipe data: <class 'bool'>\n",
+            "\n",
+            "--- Setelah Umur Diubah ---\n",
+            "Nilai umur yang baru: 20 | Tipe data: <class 'int'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 1 & 2. Membuat variabel dan menampilkan nilai beserta tipe datanya\n",
+        "nama = \"Fajar\"\n",
+        "umur = 19\n",
+        "berat = 54.5\n",
+        "terdaftar = True\n",
+        "\n",
+        "print(\"--- Nilai dan Tipe Data Awal ---\")\n",
+        "print(\"Nilai nama:\", nama, \"| Tipe data:\", type(nama))\n",
+        "print(\"Nilai umur:\", umur, \"| Tipe data:\", type(umur))\n",
+        "print(\"Nilai berat:\", berat, \"| Tipe data:\", type(berat))\n",
+        "print(\"Nilai terdaftar:\", terdaftar, \"| Tipe data:\", type(terdaftar))\n",
+        "\n",
+        "# 3. Mengubah nilai umur menjadi 20\n",
+        "umur = 20\n",
+        "print(\"\\n--- Setelah Umur Diubah ---\")\n",
+        "print(\"Nilai umur yang baru:\", umur, \"| Tipe data:\", type(umur))\n",
+        "# Apa yang berubah? Nilai pada variabel 'umur' berubah dari 19 menjadi 20,\n",
+        "# tetapi tipe datanya tetap sama yaitu integer (<class 'int'>).\n",
+        "\n",
+        "# 4. Penjelasan perbedaan \"19\" dan 19:\n",
+        "# - \"19\" (menggunakan tanda kutip) adalah tipe data String (teks/karakter),\n",
+        "#   sehingga tidak bisa digunakan untuk operasi matematika secara langsung.\n",
+        "# - 19 (tanpa tanda kutip) adalah tipe data Integer (angka bulat),\n",
+        "#   sehingga dapat digunakan untuk melakukan perhitungan aritmatika."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "aJTKIJaerMcR"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1. Membuat variabel harga dan jumlah\n",
+        "harga_buku = 12500\n",
+        "jumlah_beli = 4\n",
+        "\n",
+        "# 2. Menghitung total harga\n",
+        "total_harga = harga_buku * jumlah_beli\n",
+        "\n",
+        "# 3. Menghitung sisa pembagian total harga dengan 2.000 menggunakan operator % (modulo)\n",
+        "sisa_pembagian = total_harga % 2000\n",
+        "\n",
+        "# 4. Menghitung harga setelah diskon Rp5.000\n",
+        "diskon = 5000\n",
+        "harga_setelah_diskon = total_harga - diskon\n",
+        "\n",
+        " #5. Menampilkan hasil setiap perhitungan dengan label yang jelas\n",
+        "print(\"--- Hasil Perhitungan Praktikum 2 ---\")\n",
+        "print(f\"Harga Satuan Buku  : Rp{harga_buku:,}\")\n",
+        "print(f\"Jumlah Dibeli      : {jumlah_beli} buah\")\n",
+        "print(f\"Total Harga        : Rp{total_harga:,}\")\n",
+        "print(f\"Sisa Bagi (mod 2000): Rp{sisa_pembagian:,}\")\n",
+        "print(f\"Harga Setelah Diskon: Rp{harga_setelah_diskon:,}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XzcbrJsarVMm",
+        "outputId": "9224470b-9c58-4e48-8c48-0752cc96c426"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--- Hasil Perhitungan Praktikum 2 ---\n",
+            "Harga Satuan Buku  : Rp12,500\n",
+            "Jumlah Dibeli      : 4 buah\n",
+            "Total Harga        : Rp50,000\n",
+            "Sisa Bagi (mod 2000): Rp0\n",
+            "Harga Setelah Diskon: Rp45,000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 1. Membuat variabel nilai dan kehadiran\n",
+        "nilai = 82\n",
+        "kehadiran = 90\n",
+        "\n",
+        "# Syarat kelulusan: nilai minimal 75 dan kehadiran minimal 80%\n",
+        "syarat_nilai_minimum = 75\n",
+        "syarat_kehadiran_minimum = 80\n",
+        "\n",
+        "# 2. Menggunakan operator >= untuk memeriksa masing-masing syarat\n",
+        "lulus_nilai = nilai >= syarat_nilai_minimum\n",
+        "lulus_kehadiran = kehadiran >= syarat_kehadiran_minimum\n",
+        "\n",
+        "# Menentukan kelulusan keseluruhan menggunakan operator logika 'and'\n",
+        "lulus_total = lulus_nilai and lulus_kehadiran\n",
+        "\n",
+        "# Menampilkan hasil pemeriksaan syarat\n",
+        "print(\"--- Hasil Pemeriksaan Kelulusan Praktikum 3 ---\")\n",
+        "print(f\"Nilai Mahasiswa ({nilai}) >= 75        : {lulus_nilai}\")\n",
+        "print(f\"Kehadiran Mahasiswa ({kehadiran}%) >= 80%: {lulus_kehadiran}\")\n",
+        "print(f\"Apakah Mahasiswa Lulus?               : {lulus_total}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MF6uouE1trSP",
+        "outputId": "2c7332f7-519e-450b-b910-faa2da566626"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--- Hasil Pemeriksaan Kelulusan Praktikum 3 ---\n",
+            "Nilai Mahasiswa (82) >= 75        : True\n",
+            "Kehadiran Mahasiswa (90%) >= 80%: True\n",
+            "Apakah Mahasiswa Lulus?               : True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# --- Langkah 1 & 2: Inisialisasi awal & Pemeriksaan Syarat ---\n",
+        "nilai = 82\n",
+        "kehadiran = 90\n",
+        "\n",
+        "syarat_nilai = nilai >= 75\n",
+        "syarat_kehadiran = kehadiran >= 80\n",
+        "\n",
+        "print(\"--- Data Awal (Nilai = 82, Kehadiran = 90) ---\")\n",
+        "print(\"1. Nilai >= 75      :\", syarat_nilai)\n",
+        "print(\"2. Kehadiran >= 80% :\", syarat_kehadiran)\n",
+        "\n",
+        "# 3. Menggunakan operator 'and' untuk menentukan apakah mahasiswa memenuhi kedua syarat\n",
+        "lulus_and = syarat_nilai and syarat_kehadiran\n",
+        "print(\"3. Hasil dengan operator 'and':\", lulus_and)\n",
+        "\n",
+        "\n",
+        "# 4. Ubah nilai menjadi 70, jalankan kembali program dan amati perubahan hasil\n",
+        "nilai = 70\n",
+        "syarat_nilai = nilai >= 75\n",
+        "syarat_kehadiran = kehadiran >= 80\n",
+        "\n",
+        "lulus_and_baru = syarat_nilai and syarat_kehadiran\n",
+        "\n",
+        "print(\"\\n--- Setelah Nilai Diubah menjadi 70 ---\")\n",
+        "print(\"Nilai >= 75      :\", syarat_nilai)\n",
+        "print(\"Kehadiran >= 80% :\", syarat_kehadiran)\n",
+        "print(\"4. Hasil dengan 'and' setelah nilai = 70:\", lulus_and_baru)\n",
+        "# Amati: Hasilnya menjadi False karena salah satu syarat (nilai >= 75) tidak terpenuhi.\n",
+        "\n",
+        "\n",
+        "# 5. Coba gunakan 'or'. Jelaskan perbedaan hasilnya.\n",
+        "lulus_or = syarat_nilai or syarat_kehadiran\n",
+        "\n",
+        "print(\"\\n--- Percobaan dengan Operator 'or' (Nilai = 70, Kehadiran = 90) ---\")\n",
+        "print(\"5. Hasil dengan operator 'or':\", lulus_or)\n",
+        "\n",
+        "# Penjelasan Perbedaan:\n",
+        "# - Operator 'and' akan bernilai True HANYA JIKA KEDUA syarat terpenuhi (True and True).\n",
+        "#   Jika salah satu syarat bernilai False, maka hasil akhir menjadi False.\n",
+        "# - Operator 'or' akan bernilai True JIKA SALAH SATU atau KEDUA syarat terpenuhi.\n",
+        "#   Meskipun nilai (70) bernilai False, karena kehadiran (90) bernilai True, maka hasil 'or' tetap True."
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6rKdeSVAwqMz",
+        "outputId": "42e7eeed-ca95-4e63-98eb-331d61d07f8c"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--- Data Awal (Nilai = 82, Kehadiran = 90) ---\n",
+            "1. Nilai >= 75      : True\n",
+            "2. Kehadiran >= 80% : True\n",
+            "3. Hasil dengan operator 'and': True\n",
+            "\n",
+            "--- Setelah Nilai Diubah menjadi 70 ---\n",
+            "Nilai >= 75      : False\n",
+            "Kehadiran >= 80% : True\n",
+            "4. Hasil dengan 'and' setelah nilai = 70: False\n",
+            "\n",
+            "--- Percobaan dengan Operator 'or' (Nilai = 70, Kehadiran = 90) ---\n",
+            "5. Hasil dengan operator 'or': True\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
